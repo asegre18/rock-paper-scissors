@@ -32,6 +32,9 @@ function rockPlayer() {
         document.getElementById("r_btn").style.backgroundColor = "#555";
         document.getElementById("s_btn").style.backgroundColor = "#555";
         document.getElementById("p_btn").style.backgroundColor = "#555";
+        if (games === 10) {
+            alert("You won: " + wins + " and lost: " + losses);
+        }
     } else if (gameResult === "w") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You won against the computer!";
         wins++;
@@ -40,6 +43,9 @@ function rockPlayer() {
         document.getElementById("r_btn").style.backgroundColor = "green";
         document.getElementById("s_btn").style.backgroundColor = "red";
         document.getElementById("p_btn").style.backgroundColor = "#555";
+        if (games === 10) {
+            alert("You won: " + wins + " and lost: " + losses);
+        }
     } else if (gameResult === "l") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". Better luck next time...";
         document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
@@ -49,6 +55,9 @@ function rockPlayer() {
         document.getElementById("r_btn").style.backgroundColor = "red";
         document.getElementById("p_btn").style.backgroundColor = "green";
         document.getElementById("s_btn").style.backgroundColor = "#555";
+        if (games === 10) {
+            alert("You won: " + wins + " and lost: " + losses);
+        }
     }
 }
 function paperPlayer() {
@@ -61,6 +70,9 @@ function paperPlayer() {
         document.getElementById("r_btn").style.backgroundColor = "#555";
         document.getElementById("s_btn").style.backgroundColor = "#555";
         document.getElementById("p_btn").style.backgroundColor = "#555";
+        if (games === 10) {
+            alert("You won: " + wins + " and lost: " + losses);
+        }
     } else if (gameResult === "w") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You won against the computer!";
         wins++;
@@ -69,6 +81,9 @@ function paperPlayer() {
         document.getElementById("p_btn").style.backgroundColor = "green";
         document.getElementById("r_btn").style.backgroundColor = "red";
         document.getElementById("s_btn").style.backgroundColor = "#555";
+        if (games === 10) {
+            alert("You won: " + wins + " and lost: " + losses);
+        }
     } else if (gameResult === "l") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". Better luck next time...";
         document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
@@ -78,6 +93,9 @@ function paperPlayer() {
         document.getElementById("p_btn").style.backgroundColor = "red";
         document.getElementById("s_btn").style.backgroundColor = "green";
         document.getElementById("r_btn").style.backgroundColor = "#555";
+        if (games === 10) {
+            alert("You won: " + wins + " and lost: " + losses);
+        }
     }
 }
 function scissorsPlayer() {
@@ -90,6 +108,9 @@ function scissorsPlayer() {
         document.getElementById("r_btn").style.backgroundColor = "#555";
         document.getElementById("s_btn").style.backgroundColor = "#555";
         document.getElementById("p_btn").style.backgroundColor = "#555";
+        if (games === 10) {
+            alert("You won: " + wins + " and lost: " + losses);
+        }
     } else if (gameResult === "w") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You won against the computer!";
         wins++;
@@ -98,6 +119,9 @@ function scissorsPlayer() {
         document.getElementById("s_btn").style.backgroundColor = "green";
         document.getElementById("p_btn").style.backgroundColor = "red";
         document.getElementById("r_btn").style.backgroundColor = "#555";
+        if (games === 10) {
+            alert("You won: " + wins + " and lost: " + losses);
+        }
     } else if (gameResult === "l") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". Better luck next time...";
         document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
@@ -107,5 +131,8 @@ function scissorsPlayer() {
         document.getElementById("s_btn").style.backgroundColor = "red";
         document.getElementById("r_btn").style.backgroundColor = "green";
         document.getElementById("p_btn").style.backgroundColor = "#555";
+        if (games === 10) {
+            alert("You won: " + wins + " and lost: " + losses);
+        }
     }
 }
